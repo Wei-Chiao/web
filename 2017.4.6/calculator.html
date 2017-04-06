@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button onclick="document.getElementById('myImage').src='run.png'">Run</button>
+
+<img id="myImage" src="stop.png" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='stop.png'">Stop</button>
+
+  <br><br>
+
+
+
+
+ <input id="a" type="text" />
+ <br><button onclick="add()" >+</button>
+ <button onclick="minus()" >－</button>
+ <button onclick="times()" >*</button>
+ <button onclick="divide()" >÷</button>
+ <br><input id="b" type="test" />
+  
+ <br>=<output id="result"></output>
+ <!-- <br><input type="reset"> -->
+  <br><button onclick="clean()" >clean</button>
+
+<script>
+    function add() {
+    var a = parseInt(document.getElementById('a').value);
+    var b = parseInt(document.getElementById('b').value);
+    document.getElementById('result').value =  a+b ;
+}
+</script>
+<script>
+ function minus() {
+    var a = parseInt(document.getElementById('a').value);
+    var b = parseInt(document.getElementById('b').value);
+    document.getElementById('result').value =  a-b ;
+}
+</script>
+<script>
+function times() {
+    var a = parseInt(document.getElementById('a').value);
+    var b = parseInt(document.getElementById('b').value);
+    document.getElementById('result').value =  a*b ;
+}
+</script>
+
+<script>
+function divide() {
+    var a = parseInt(document.getElementById('a').value);
+    var b = parseInt(document.getElementById('b').value);
+    document.getElementById('result').value =  a/b ;
+
+}
+</script>
+
+<script>
+function clean() {
+    var a = parseInt(document.getElementById('a').value="");
+    var b = parseInt(document.getElementById('b').value="");
+    document.getElementById('result').value= "";
+   
+}
+</script>
+
+
+
+
+</body>
+</html>
